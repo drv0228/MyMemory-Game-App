@@ -19,7 +19,7 @@ Users should be able to:
 
 ###### Installation Instruccions 
 
-To see or install cocktailLandiaApp in your local machine , follow these steps: 
+To see or install MyMemory Game App in your local machine , follow these steps: 
 1. You need to git clone the repositories MyMemoryGame
 2. Navigate to the project directory.
 3. Do not forget to make npm i before run them. 
