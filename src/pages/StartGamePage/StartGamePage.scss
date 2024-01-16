@@ -1,0 +1,53 @@
+@use "../../styles/partials/__variables" as *;
+@use "../../styles/partials/__mixins" as *;
+
+main {
+    background-color: $p-blue;
+}
+button {
+    width: 134px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    margin: 0.2rem;
+    padding: 0.5rem 0rem;
+    font-size: 1rem;
+    color: $s-gray;
+    background-color: $blue-idle;
+}
+.start-game__page {
+    background-color: $p-blue;
+    padding: 4rem 1rem 11rem 1rem;
+}
+.page-title {
+    font-size: 2rem;
+    color: $s-gray;
+    margin: 0 auto;
+    padding: 6rem 2rem 2rem 2rem;
+}
+
+.page-content {
+    background-color: $s-gray;
+    border-radius: 10px;
+    margin: 1rem 2rem 1.5rem 2rem;
+    padding: 1rem 0rem 1.5rem 0rem;
+}
+
+.page-labels {
+    font-size: 1rem;
+    color: $blue-labels;
+    margin: 1rem;
+    text-align: left;
+}
+.button-players {
+    padding: 0rem;
+    width: 72px;
+}
+.selected {
+    background-color: $p-blue;
+}
+.button-yellow {
+    width: 279px;
+    margin-top: 2rem;
+    background-color: $p-orange;
+}
