@@ -1,0 +1,23 @@
+@use "../../styles/partials/__variables" as *;
+@use "../../styles/partials/__mixins" as *;
+
+.nav-bar {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-title {
+    color: $p-blue;
+    font-size: 1.8rem;
+}
+.app-menu {
+    width: 78px;
+    height: 40px;
+    border: none;
+    color: $s-gray;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: $p-orange;
+}
