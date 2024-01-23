@@ -1,0 +1,21 @@
+@use "../../styles/partials/__variables" as *;
+@use "../../styles/partials/__mixins" as *;
+
+.container {
+    display: grid;
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+    grid-template: repeat(4, 70px) / repeat(4, 70px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1.5rem;
+}
+
+.box {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background-color: $s-blue;
+}
