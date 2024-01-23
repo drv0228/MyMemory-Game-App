@@ -1,12 +1,12 @@
 import "./SoloPage.scss";
 import NavBar from "../../components/NavBar/NavBar";
-import StartedGrid4x4 from "../../components/StartedGrid4x4/StartedGrid4x4";
+import StartedGrid6x6 from "../../components/StartedGrid6x6/StartedGrid6x6";
 
 function SoloPage() {
     return (
       <>
       <NavBar />
-      <StartedGrid4x4 />
+      <StartedGrid6x6 />
       <section className="solo-page__counter">
        <div className="counter-container">
         <p className="counter-labels">Time</p>
