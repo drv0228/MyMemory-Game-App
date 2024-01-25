@@ -1,11 +1,11 @@
 import "./NavBar.scss";
 
-function NavBar() {
+function NavBar({openModal}) {
     return (
       <>
         <div className="nav-bar">
         <p className="app-title">memory</p>
-        <button className="app-menu">Menu</button>
+        <button onClick={openModal} className="app-menu">Menu</button>
         </div>
       </>
     );
