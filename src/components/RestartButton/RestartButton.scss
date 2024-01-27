@@ -1,0 +1,13 @@
+@use "../../styles/partials/__variables" as *;
+@use "../../styles/partials/__mixins" as *;
+
+.button_reset {
+    color: $s-gray;
+    border: none;
+    padding: 1rem;
+    margin: .5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 18px;
+    background-color: $p-orange;
+    @include dimensions (279px, 48px);
+  }

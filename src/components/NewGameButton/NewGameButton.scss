@@ -1,1 +1,12 @@
+@use "../../styles/partials/__variables" as *;
+@use "../../styles/partials/__mixins" as *;
 
+.button_new-res {
+    color: $s-blue;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    margin: .5rem 1.5rem;
+    background-color: $s-idle;
+    @include dimensions (279px, 48px);
+  }
