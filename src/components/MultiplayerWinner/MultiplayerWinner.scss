@@ -1,0 +1,58 @@
+@use "../../styles/partials/__variables" as *;
+@use "../../styles/partials/__mixins" as *;
+
+.multi-winner__overlay {
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .multi-winner__container {
+    display: flex;
+    flex-direction: column;
+    background: $s-gray;
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 327vw;
+    border-radius: 10px;
+  }
+  .multi-winner__title {
+    color: $p-blue;
+    font-size: 1.7rem;
+    margin: 0.8rem 0rem .5rem 0rem;
+}
+.multi-winner__label {
+    font-size: 0.9rem;
+    color: $blue-labels;
+    margin-bottom: 1rem;
+}
+.winner-details {
+        color: $p-blue;
+        font-size: 1.2rem;
+        margin: 0rem 1rem;
+}
+.multi-winner__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $s-blue;
+    border: none;
+    border-radius: 5px;
+    margin: 0.3rem 1.5rem;
+    background-color: $s-idle;
+    @include dimensions (279px, 48px);
+}
+
+.winner-labels {
+    font-size: 0.9rem;
+    color: $blue-labels;
+    margin: 1rem;
+}
+.player-winner {
+    color: $s-gray;
+    background-color: $p-blue;
+}
