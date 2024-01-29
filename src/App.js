@@ -7,7 +7,8 @@ import React, { useState, useEffect } from "react";
 import MultiplayerPage from "./pages/MultiplayerPage/MultiplayerPage";
 // import ModalRNR from "./components/ModalRNR/ModalRNR";
 // import SoloGameOver from "./components/SoloGameOver/SoloGameOver";
-import MultiplayerWinner from "./components/MultiplayerWinner/MultiplayerWinner";
+// import MultiplayerWinner from "./components/MultiplayerWinner/MultiplayerWinner";
+import MultiplayerTie from "./components/MultiplayerTie/MultiplayerTie";
 
 function App() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -24,7 +25,8 @@ function App() {
         </Routes>
         {/* {isModalOpen && <ModalRNR />} */}
         {/* {isModalOpen && <SoloGameOver />} */}
-        {isModalOpen && <MultiplayerWinner />}
+        {/* {isModalOpen && <MultiplayerWinner />} */}
+        {isModalOpen && <MultiplayerTie />}
       </BrowserRouter>
     </div>
   );
