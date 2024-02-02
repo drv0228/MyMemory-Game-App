@@ -10,4 +10,10 @@
     font-size: 18px;
     background-color: $p-orange;
     @include dimensions (279px, 48px);
+    @include tablet {
+      position: absolute;
+      left: 5rem;
+      bottom: 13rem;
+      @include dimensions (264px, 52px);
+    }
   }

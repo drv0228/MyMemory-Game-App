@@ -9,4 +9,10 @@
     margin: .5rem 1.5rem;
     background-color: $s-idle;
     @include dimensions (279px, 48px);
+    @include tablet {
+      position: absolute;
+      right: 6rem;
+      bottom: 13rem;
+      @include dimensions (264px, 52px);
+    }
   }
