@@ -6,8 +6,8 @@ import React, { useState, useEffect } from "react";
 // import SoloPage from "./pages/SoloPage/SoloPage";
 import MultiplayerPage from "./pages/MultiplayerPage/MultiplayerPage";
 // import ModalRNR from "./components/ModalRNR/ModalRNR";
-// import SoloGameOver from "./components/SoloGameOver/SoloGameOver";
-import MultiplayerWinner from "./components/MultiplayerWinner/MultiplayerWinner";
+import SoloGameOver from "./components/SoloGameOver/SoloGameOver";
+// import MultiplayerWinner from "./components/MultiplayerWinner/MultiplayerWinner";
 // import MultiplayerTie from "./components/MultiplayerTie/MultiplayerTie";
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
           <Route path="/" element={<MultiplayerPage openModal={openModal} />} />
         </Routes>
         {/* {isModalOpen && <ModalRNR />} */}
-        {/* {isModalOpen && <SoloGameOver />} */}
-        {isModalOpen && <MultiplayerWinner />}
+        {isModalOpen && <SoloGameOver />}
+        {/* {isModalOpen && <MultiplayerWinner />} */}
         {/* {isModalOpen && <MultiplayerTie />} */}
       </BrowserRouter>
     </div>

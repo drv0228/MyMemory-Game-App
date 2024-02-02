@@ -10,9 +10,10 @@
     background-color: $s-idle;
     @include dimensions (279px, 48px);
     @include tablet {
-      position: absolute;
-      right: 6rem;
-      bottom: 9rem;
+      position: relative;
+      left: 17.5rem;
+      bottom: 2.6rem;
+      padding: 1rem;
       @include dimensions (264px, 52px);
     }
   }

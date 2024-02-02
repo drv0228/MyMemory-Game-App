@@ -11,9 +11,8 @@
     background-color: $p-orange;
     @include dimensions (279px, 48px);
     @include tablet {
-      position: absolute;
-      left: 5rem;
-      bottom: 9rem;
+      position: relative;
+      bottom: -1.5rem;
       @include dimensions (264px, 52px);
     }
   }
