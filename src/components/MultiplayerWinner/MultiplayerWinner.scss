@@ -9,6 +9,7 @@
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+
   }
   
   .multi-winner__container {
@@ -17,23 +18,41 @@
     background: $s-gray;
     margin: auto;
     padding: 1.5rem;
-    max-width: 327vw;
     border-radius: 10px;
+    @include tablet {
+        margin: 9rem 0rem;
+        border-radius: 20px;
+        width: 85%;
+        height: 70%;
+
+    }
   }
   .multi-winner__title {
     color: $p-blue;
     font-size: 1.7rem;
     margin: 0.8rem 0rem .5rem 0rem;
+    @include tablet { 
+        font-size: 2.9rem;
+        margin: 2.8rem 0rem 2rem 0rem;
+       }
 }
 .multi-winner__label {
     font-size: 0.9rem;
     color: $blue-labels;
     margin-bottom: 1rem;
+    @include tablet {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
 }
 .winner-details {
         color: $p-blue;
         font-size: 1.2rem;
         margin: 0rem 1rem;
+        @include tablet {
+            font-size: 2rem;
+            margin-right: 1.7rem;
+          }
 }
 .multi-winner__details {
     display: flex;
@@ -45,12 +64,21 @@
     margin: 0.3rem 1.5rem;
     background-color: $s-idle;
     @include dimensions (279px, 48px);
+    @include tablet {
+        border-radius: 10px;
+        @include dimensions (542px, 72px);
+
+        }
 }
 
 .winner-labels {
     font-size: 0.9rem;
     color: $blue-labels;
     margin: 1rem;
+    @include tablet {
+        font-size: 1.2rem;
+        margin-left: 1.7rem;
+    }
 }
 .player-winner {
     color: $s-gray;
