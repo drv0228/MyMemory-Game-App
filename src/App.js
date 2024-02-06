@@ -2,11 +2,11 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-// import StartGamePage from "./pages/StartGamePage/StartGamePage";
+import StartGamePage from "./pages/StartGamePage/StartGamePage";
 // import SoloPage from "./pages/SoloPage/SoloPage";
-import MultiplayerPage from "./pages/MultiplayerPage/MultiplayerPage";
+// import MultiplayerPage from "./pages/MultiplayerPage/MultiplayerPage";
 // import ModalRNR from "./components/ModalRNR/ModalRNR";
-import SoloGameOver from "./components/SoloGameOver/SoloGameOver";
+// import SoloGameOver from "./components/SoloGameOver/SoloGameOver";
 // import MultiplayerWinner from "./components/MultiplayerWinner/MultiplayerWinner";
 // import MultiplayerTie from "./components/MultiplayerTie/MultiplayerTie";
 
@@ -20,11 +20,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<StartGamePage />} /> */}
-          <Route path="/" element={<MultiplayerPage openModal={openModal} />} />
+          <Route path="/" element={<StartGamePage />} />
+          {/* <Route path="/" element={<MultiplayerPage openModal={openModal} />} /> */}
         </Routes>
         {/* {isModalOpen && <ModalRNR />} */}
-        {isModalOpen && <SoloGameOver />}
+        {/* {isModalOpen && <SoloGameOver />} */}
         {/* {isModalOpen && <MultiplayerWinner />} */}
         {/* {isModalOpen && <MultiplayerTie />} */}
       </BrowserRouter>

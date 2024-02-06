@@ -1,12 +1,10 @@
 @use "../../styles/partials/__variables" as *;
 @use "../../styles/partials/__mixins" as *;
 
-main {
-    background-color: $p-blue;
-}
+
 button {
-    width: 134px;
-    height: 40px;
+    width: 8.3rem;
+    height: 2.5rem;
     border-radius: 30px;
     border: none;
     margin: 0.2rem;
@@ -14,16 +12,29 @@ button {
     font-size: 1rem;
     color: $s-gray;
     background-color: $blue-idle;
+    @include tablet {
+        width: 16rem;
+        height: 3.2rem;
+        margin: 0.9rem;
+        font-size: 1.6rem;
+    }
+
 }
 .start-game__page {
     background-color: $p-blue;
-    padding: 4rem 1rem 11rem 1rem;
+    padding: 1rem 1rem 11rem 1rem;
+    @include tablet {
+      padding-top: 5rem;
+    }
 }
 .page-title {
     font-size: 2rem;
     color: $s-gray;
     margin: 0 auto;
     padding: 6rem 2rem 2rem 2rem;
+    @include tablet {
+        font-size: 2.7rem;
+    }
 }
 
 .page-content {
@@ -31,6 +42,10 @@ button {
     border-radius: 10px;
     margin: 1rem 2rem 1.5rem 2rem;
     padding: 1rem 0rem 1.5rem 0rem;
+    @include tablet {
+        padding-top: 2rem;
+        border-radius: 20px;
+    }
 }
 
 .page-labels {
@@ -38,16 +53,36 @@ button {
     color: $blue-labels;
     margin: 1rem;
     text-align: left;
+    @include tablet {
+        font-size: 1.3rem;
+        margin-left: 4rem;
+    }
 }
 .button-players {
     padding: 0rem;
-    width: 72px;
+    width: 4.5rem;
+    @include tablet {
+        width: 7.4rem;
+        height: 3.2rem;
+        margin: 0.2rem 0.7rem 0.7rem 0.7rem;
+    }
 }
 .selected {
     background-color: $p-blue;
 }
+.button-grids {
+    margin-top: 0.2rem;
+}
 .button-yellow {
-    width: 279px;
+    width: 17.4px;
     margin-top: 2rem;
     background-color: $p-orange;
+    @include tablet {
+        width: 33.8rem;
+        height: 4.3rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 35px;
+    }
 }

@@ -2,7 +2,7 @@ import "./StartGamePage.scss";
 
 function StartGamePage() {
     return (
-      <main>
+      <main className="start-game">
         <section className="start-game__page">
         <h1 className="page-title">memory</h1>
         <div className="page-content">
@@ -20,8 +20,8 @@ function StartGamePage() {
             </div>
             <p className="page-labels">Grid Size</p>
             <div>
-                <button className="selected">4x4</button>
-                <button>6x6</button>
+                <button className="button-grids selected">4x4</button>
+                <button className="button-grids">6x6</button>
             </div>
             <button className="button-yellow">Start Game</button>
             </div>
