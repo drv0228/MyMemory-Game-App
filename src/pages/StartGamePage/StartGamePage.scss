@@ -18,6 +18,11 @@ button {
         margin: 0.9rem;
         font-size: 1.6rem;
     }
+    @include laptop {
+        width: 12rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
 
 }
 .start-game__page {
@@ -25,6 +30,9 @@ button {
     padding: 1rem 1rem 11rem 1rem;
     @include tablet {
       padding-top: 5rem;
+    }
+    @include laptop {
+        padding: 3rem 1rem 14rem 1rem;
     }
 }
 .page-title {
@@ -34,6 +42,10 @@ button {
     padding: 6rem 2rem 2rem 2rem;
     @include tablet {
         font-size: 2.7rem;
+    }
+    @include laptop {
+        font-size: 1.9rem;
+        padding-bottom: 3.5rem;
     }
 }
 
@@ -46,6 +58,12 @@ button {
         padding-top: 2rem;
         border-radius: 20px;
     }
+    @include laptop {
+        width: 50%;
+        margin: auto;
+        padding-top: 1.2rem;
+        border-radius: 15px;
+}
 }
 
 .page-labels {
@@ -57,6 +75,11 @@ button {
         font-size: 1.3rem;
         margin-left: 4rem;
     }
+    @include laptop {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        margin-left: 2.5rem;
+    }
 }
 .button-players {
     padding: 0rem;
@@ -66,6 +89,11 @@ button {
         height: 3.2rem;
         margin: 0.2rem 0.7rem 0.7rem 0.7rem;
     }
+    @include laptop {
+        width: 5.5rem;
+        height: 2.3rem;
+        margin: 0rem 0.6rem;
+    }
 }
 .selected {
     background-color: $p-blue;
@@ -74,7 +102,7 @@ button {
     margin-top: 0.2rem;
 }
 .button-yellow {
-    width: 17.4px;
+    width: 16rem;
     margin-top: 2rem;
     background-color: $p-orange;
     @include tablet {
@@ -84,5 +112,11 @@ button {
         margin-top: 1rem;
         margin-bottom: 2rem;
         border-radius: 35px;
+    }
+    @include laptop {
+        width: 25.5rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
     }
 }
