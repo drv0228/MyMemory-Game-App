@@ -2,11 +2,11 @@ import "./MultiplayerPage.scss";
 import NavBar from "../../components/NavBar/NavBar";
 import StartedGrid6x6 from "../../components/StartedGrid6x6/StartedGrid6x6";
 
-function MultiplayerPage({openModal}) {
+function MultiplayerPage({openModal, matrix}) {
   return (
     <>
-      <NavBar openModal={openModal} />
-      <StartedGrid6x6 />
+      <NavBar openModal={openModal} matrix={matrix} />
+      <StartedGrid6x6 matrix={matrix} />
       <section className="page__counter">
         <div className="counter-container">
           <p className="counter-labels">P1</p>
